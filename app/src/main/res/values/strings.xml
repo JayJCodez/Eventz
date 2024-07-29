@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Eventz</string>
+    <string name="open">OptionsMenuPractice</string>
+    <string name="close">OptionsMenuPractice</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="manage_button_description">Edit event</string>
+    <string name="view">View</string>
+
+
+    <string-array name="options">
+        <item>Travel</item>
+        <item>Food and Drink</item>
+        <item>Health and Fitness</item>
+        <item>Education</item>
+        <item>Entertainment</item>
+        <item>Finance</item>
+        <item>Social</item>
+        <item>Productivity</item>
+        <item>Shopping</item>
+        <!-- Add more options as needed -->
+    </string-array>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="fill_in_registration_details">Fill in registration details</string>
+
+</resources>

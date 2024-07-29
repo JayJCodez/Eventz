@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- Participant Info Layout -->
+    <LinearLayout
+        android:id="@+id/participant_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="70dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="70dp"
+        android:orientation="vertical"
+        android:background="@color/purple"
+        android:gravity="center"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:text="Sustainable Discovery April, 2024"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+
+
+        <TextView
+            android:id="@+id/event_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:text="Sat, 27 April, 2024"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+
+        <!-- Participant Name -->
+
+        <EditText
+            android:id="@+id/promo_code"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="12dp"
+            android:hint="Promo Code"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tickets"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Participant Name -->
+        <EditText
+            android:id="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="12dp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="16sp" />
+
+        <!-- Participant Email -->
+        <EditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="12dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="16sp" />
+
+        <!-- Participant Phone -->
+        <EditText
+            android:id="@+id/edit_text_phone"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginBottom="24dp"
+            android:drawablePadding="12dp"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/num_tickets_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Number of Tickets"
+            android:inputType="number" />
+
+
+        <!-- Button to Confirm Transaction -->
+        <Button
+            android:id="@+id/button_confirm_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Booking"
+            android:textColor="@android:color/white"
+            android:background="@color/darker_purple"
+            android:textSize="16sp"
+            android:padding="16dp" />
+    </LinearLayout>
+
+    </ScrollView>
+    <!-- Confirmation Message Layout (Initially Hidden) -->
+    <LinearLayout
+        android:id="@+id/confirmation_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_confirmation_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Confirmed!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+
+
+</FrameLayout>

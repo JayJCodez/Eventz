@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.OptionsMenuPractice" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Style for the toolbar -->
+        <item name="toolbarStyle">@style/MyToolbar</item>
+    </style>
+
+    <!-- Style for the toolbar -->
+    <style name="MyToolbar" parent="@style/Widget.Material3.Toolbar">
+        <!-- Customize the appearance of the toolbar here -->
+        <item name="android:background">#FFFFFF</item> <!-- Sample background color -->
+        <item name="android:titleTextColor">#000000</item> <!-- Sample text color -->
+        <!-- Add more styling attributes as needed -->
+    </style>
+
+    <style name="Theme.OptionsMenuPractice" parent="Base.Theme.OptionsMenuPractice" />
+
+    <style name="custom_card_view_style" parent="Widget.MaterialComponents.CardView">
+
+        <item name="shapeAppearanceOverlay">@style/custom_card_view</item>
+
+
+    </style>
+
+    <style name="custom_card_view" parent="">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">48dp</item>
+        <item name="cornerSizeTopLeft">48dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+
+    </style>
+
+</resources>

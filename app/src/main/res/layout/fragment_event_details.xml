@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.EventDetails"
+    android:layout_marginBottom="68dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="649dp"
+        android:layout_marginBottom="68dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/event_details_img"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="68dp"
+                android:src="@drawable/img"
+                app:layout_constraintBottom_toTopOf="@+id/event_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/event_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginVertical="20dp"
+                android:background="@color/darker_purple"
+                android:text="Hello World"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/event_details_img" />
+
+            <TextView
+                android:id="@+id/eventid"
+                android:layout_width="93dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="76dp"
+                android:text="TextView"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/cardView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/eventtype"
+                android:layout_width="93dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="59dp"
+                android:layout_marginEnd="286dp"
+                android:layout_marginBottom="24dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toTopOf="@+id/cardView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gettickets" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="351dp"
+                android:layout_height="91dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="@color/darker_purple"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eventtype">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="347dp"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="79dp"
+                        android:layout_height="match_parent"
+                        android:src="@color/lavender"
+                        app:circularflow_radiusInDP="0"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:text="The Camden Clean Air Initiative"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="84dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="221 Followers"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/button"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2" />
+
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="27dp"
+                        android:backgroundTint="@color/white"
+                        android:text="Follow +"
+                        android:textColor="@color/darker_purple"
+                        android:textSize="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView11"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/Area"
+                android:layout_width="175dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="204dp"
+                android:text="Kings Cross"
+                app:layout_constraintBottom_toTopOf="@+id/TimeTillEvent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <TextView
+                android:id="@+id/TimeTillEvent"
+                android:layout_width="175dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="204dp"
+                android:layout_marginBottom="8dp"
+                android:text="1 day 6 hours"
+                app:layout_constraintBottom_toTopOf="@+id/RefundPolicy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Area" />
+
+            <TextView
+                android:id="@+id/RefundPolicy"
+                android:layout_width="175dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="204dp"
+                android:layout_marginBottom="8dp"
+                android:text="Refund Policy"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/RefundPolicyText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TimeTillEvent" />
+
+            <TextView
+                android:id="@+id/RefundPolicyText"
+                android:layout_width="367dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="The organizers will review refund requests on a case-by-case basis"
+                app:layout_constraintBottom_toTopOf="@+id/textView12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RefundPolicy" />
+
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_width="87dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="17dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toTopOf="@+id/finish_time"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/start_label"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <TextView
+                android:id="@+id/start_label"
+                android:layout_width="51dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:text="Start"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/start_time"
+                app:layout_constraintStart_toEndOf="@+id/Area"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <TextView
+                android:id="@+id/finish_label"
+                android:layout_width="51dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="71dp"
+                android:text="Finish"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/RefundPolicyText"
+                app:layout_constraintEnd_toStartOf="@+id/finish_time"
+                app:layout_constraintStart_toEndOf="@+id/TimeTillEvent" />
+
+            <TextView
+                android:id="@+id/finish_time"
+                android:layout_width="87dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="71dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toTopOf="@+id/RefundPolicyText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/finish_label"
+                app:layout_constraintTop_toBottomOf="@+id/start_time" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Event Description"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/event_info"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RefundPolicyText" />
+
+            <TextView
+                android:id="@+id/event_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="top|start"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <Button
+                android:id="@+id/gettickets"
+                android:layout_width="292dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="57dp"
+                android:layout_marginEnd="62dp"
+                android:layout_marginBottom="7dp"
+                android:text="Get Tickets"
+                app:layout_constraintBottom_toTopOf="@+id/eventid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/event_name" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="92dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="176dp"
+                android:layout_marginBottom="10dp"
+                android:text="Category"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/eventtype"
+                app:layout_constraintEnd_toStartOf="@+id/eventid"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gettickets" />
+
+            <TextView
+                android:id="@+id/date_label"
+                android:layout_width="50dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:text="Date"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/RefundPolicyText"
+                app:layout_constraintEnd_toStartOf="@+id/date"
+                app:layout_constraintStart_toEndOf="@+id/RefundPolicy"
+                app:layout_constraintTop_toBottomOf="@+id/finish_label" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="83dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="26dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toTopOf="@+id/RefundPolicyText"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

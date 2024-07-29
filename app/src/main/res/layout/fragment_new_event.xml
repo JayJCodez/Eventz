@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="58dp"
+        android:paddingBottom="0dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+
+        >
+
+        <LinearLayout
+            android:paddingTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Event Name -->
+            <TextView
+                android:id="@+id/textView8"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"
+                android:text="New Event"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/event_name_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Event Name" />
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:inputType="text" />
+
+            <!-- Event Category -->
+            <TextView
+                android:id="@+id/event_category_label"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Event Category" />
+
+            <Spinner
+                android:id="@+id/event_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/choose_date_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:text="Event Date" />
+
+            <Button
+                android:id="@+id/choose_date"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="Choose Date"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/date_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                 />
+
+
+
+            <!-- Event Start Time -->
+            <TextView
+                android:id="@+id/start_time_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Event Start Time" />
+
+            <Button
+                android:id="@+id/choose_start_time"
+                android:layout_width="match_parent"
+                android:text="Choose Time"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/set_start_time"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="" />
+
+            <!-- Event Finish Time -->
+            <TextView
+                android:id="@+id/end_time_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Event Finish Time" />
+
+                <Button
+                android:id="@+id/choose_finish_time"
+                android:layout_width="match_parent" android:layout_marginBottom="15dp"
+                    android:text="Choose Time"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/set_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="" />
+
+            <!-- Event Information -->
+            <TextView
+                android:id="@+id/event_info_label"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Event Information" />
+
+            <EditText
+                android:id="@+id/eventinformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="top|start"
+                android:inputType="textMultiLine" />
+
+
+            <!-- Create Event Button -->
+            <Button
+                android:id="@+id/createneweventBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/darker_purple"
+                android:text="Create Event" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

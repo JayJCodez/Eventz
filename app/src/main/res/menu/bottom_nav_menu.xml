@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home_bottomnav"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item android:id="@+id/eventsbottom"
+        android:title="Events"
+        android:icon="@drawable/baseline_sports_handball_24"/>
+
+    <item android:title=""
+        android:enabled="true"/>
+
+    <item android:id="@+id/popular_bottom"
+        android:title="Popular"
+        android:icon="@drawable/baseline_notifications_active_24"/>
+
+    <item android:id="@+id/profile_bottom"
+        android:title="Profile"
+        android:icon="@drawable/baseline_co_present_24"/>
+
+</menu>
